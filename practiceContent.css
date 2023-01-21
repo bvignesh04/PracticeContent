@@ -1,0 +1,124 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header{
+    border: 2px solid white;
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.main-content{
+  background-color: whitesmoke;
+  width: 500px;
+  height: 300px;
+  line-height: 25px;
+  border-radius: 10px;
+  box-shadow: 0,0,10px black;
+}
+
+.main-content .text-area{
+    font-size: 18px;
+
+    
+}
+
+.person-name{
+    color: red;
+    font-size: 25px;
+}
+
+.btn{
+    border:2px solid white;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 20px;
+    
+}
+
+.btn:hover{
+    background-color:rgba(0, 0, 0, 0.904);
+} */
+
+
+/* MODAL */
+
+body{
+    position: relative;
+    height: 100vh;
+}
+
+#open-btn{
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  width: 300px;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px black;
+
+}
+
+#open-btn:hover{
+    background-color: white;
+}
+
+#modal{
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+animation-name: animatemodal;
+animation-duration: .4s;
+    
+}
+
+
+#close-btn{
+    font-size: 40px;
+    cursor: pointer;
+    color: red;
+
+}
+
+#modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@keyframes animatemodal {
+    from{
+        top:-300px;
+        opacity:0
+        
+    }
+
+    to{
+        top:50%;
+        opacity:0
+        
+    }
+}
